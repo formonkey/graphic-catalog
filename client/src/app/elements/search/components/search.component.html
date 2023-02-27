@@ -1,0 +1,11 @@
+<div class="relative mt-1 rounded-full shadow-sm w-[400px]">
+    <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-6">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <input
+        (input)="onInput($event)"
+        class="block w-full rounded-full pl-16 h-[45px] w-full focus:border-transparent bg-gray-200 focus:ring-transparent border-transparent sm:text-sm"
+        id="email"
+        placeholder="Search ..."
+    />
+</div>

@@ -1,0 +1,18 @@
+<app-container>
+    <div class="flex flex-col space-y-[24px] w-full">
+        <h1 class="text-2xl font-medium">Categories</h1>
+
+        <div class="flex w-full py-[24px] space-x-[24px]">
+            <ng-container *ngFor="let category of categories">
+                <div
+                    (click)="selectCategory(category)"
+                    [ngClass]="{'text-gray-900 scale-110':category?.label === selected?.label}"
+                    class="flex flex-col space-y-[16px] bg-gray-100 h-[120px] w-[120px] p-[16px] rounded-md justify-center text-gray-400 hover:text-gray-900 items-center cursor-pointer"
+                >
+                    <i [class]="category?.icon" class="text-[24px]"></i>
+                    <span class="">{{ category?.label }}</span>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</app-container>

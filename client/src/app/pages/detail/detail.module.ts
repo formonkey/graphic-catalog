@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 
+import { DetailService } from './services';
 import { DetailComponent } from './components';
 import { DetailRouter } from './detail.router';
 
@@ -9,6 +10,9 @@ import { DetailRouter } from './detail.router';
     ],
     declarations: [
         DetailComponent,
+    ],
+    providers: [
+        DetailService
     ]
 })
 

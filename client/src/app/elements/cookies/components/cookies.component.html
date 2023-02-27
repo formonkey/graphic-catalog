@@ -1,0 +1,33 @@
+<div
+    *ngIf="show"
+    class="pointer-events-none fixed inset-x-0 bottom-0 px-4 pb-4 z-[20]"
+>
+    <div class="pointer-events-auto ml-auto max-w-xl rounded-xl bg-white p-6 ring-1 ring-gray-900/10">
+        <p class="text-sm leading-6 text-gray-900">
+            This is a project developed for a technical test using Angular 15 and GraphQL as the connection method with
+            the server. At the top of the browser, you will find a search bar that will allow you to search through the
+            results shown below.<br/><br/>
+
+            To connect with the server, multiple requests are required without the need to store data in a database. For
+            this purpose, we have created a docker-compose file that can be found in the root of the project. This file
+            can be easily launched using a simple command found in the README file.<br/><br/>
+        </p>
+
+
+        <pre class="flex bg-gray-100 rounded-md mb-5 py-[4px] px-[12px] items-center text-purple-500 text-[15px]">
+                <code>docker-compose up</code>
+            </pre>
+
+        <p class="text-sm leading-6 text-gray-900">
+            The docker-compose file includes all the necessary configurations to connect with the server and perform the
+            necessary requests without having to manually configure anything. Additionally, this allows the project to
+            be run in any environment without worrying about dependencies or server configuration.<br/><br/>
+        </p>
+
+        <div class="mt-4 flex items-center gap-x-5">
+            <button (click)="close()" class="text-sm font-semibold leading-6 text-gray-900" type="button">
+                Close Information
+            </button>
+        </div>
+    </div>
+</div>

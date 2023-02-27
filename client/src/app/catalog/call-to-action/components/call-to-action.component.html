@@ -1,0 +1,20 @@
+<div class="mx-auto flex max-w-7xl my-6 items-center justify-between p-6 lg:px-8">
+    <div class="flex bg-secondary w-full border border-secondary rounded-2xl h-[270px]">
+        <div class="flex w-full justify-between p-[24px] items-center">
+            <div class="flex-col space-y-[24px] items-center justify-center">
+                <div class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                    <h2 class="inline sm:block">Find the Perfect Graphs for Your Model</h2>
+                    <p class="text-xl inline sm:block">With Model Graph Search.</p>
+                </div>
+                <form class="flex-col space-y-[24px]">
+                    <div class="flex gap-x-4">
+                        <app-search (search)="handleSearchAction($event)"></app-search>
+                    </div>
+                </form>
+            </div>
+            <div class="mt-[20px]">
+                <img alt="" class="h-[320px] " src="/assets/character.svg">
+            </div>
+        </div>
+    </div>
+</div>
